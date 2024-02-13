@@ -35,7 +35,7 @@ p {
 }
 
 .title {
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Philosopher', sans-serif !important;
   font-size: 2em !important;
   color: var(--dark);
 }
@@ -45,6 +45,10 @@ p {
   font-size: 1.5em !important;
   color: var(--gray);
 }
+
+.text-white{color: var(--background);}
+.text-dark{color: var(--dark);}
+.text-gray{color: var(--gray);}
 
 /*-----------------------------------------
 FONTS

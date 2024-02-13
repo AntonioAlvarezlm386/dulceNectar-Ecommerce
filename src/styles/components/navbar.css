@@ -2,21 +2,23 @@
 nav .navbar {
   top: 0%;
   position: sticky !important;
-  z-index: 1030;
+  z-index: 10;
 }
 
-/* color principal de la navbar */
+.navbar{
+  z-index: 1000;
+}
+
 nav {
   background-color: var(--dark-primary);
 }
 
-/* logo de img */
 nav .nav-img {
   width: 50px !important;
   padding: 0;
 }
 
-/* icono de usuario  */
+/* USER ICON  */
 nav .cuenta {
   width: 30px !important;
   padding: 0;
@@ -36,46 +38,4 @@ nav .selector {
 
 nav .title {
   font-size: 1.5em !important;
-}
-
-
-/*
-----------------------------------------------------
-MEDIA QUERIES FOR COMMON SIZES
-----------------------------------------------------
-*/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  nav #id-navbar-account-dropdown-list {
-    transform: translateX(calc(100% - 10px));
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  nav #id-navbar-account-dropdown-list {
-    transform: translateX(calc(100% - 10px));
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  nav #id-navbar-account-dropdown-list {
-    transform: translateX(-25%);
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  nav #id-navbar-account-dropdown-list {
-    transform: translateX(calc(-100% + 10px));
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  nav #id-navbar-account-dropdown-list {
-    transform: translateX(calc(-100% + 10px));
-  }
 }
