@@ -1,302 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google fonts imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap 5 styles -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+  <!-- Google fonts imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Montserrat&display=swap"
+    rel="stylesheet" />
 
-    <!-- Bootstrap 5 Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+  <!-- Bootstrap 5 styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- Local imports -->
-    <link rel="stylesheet" href="./styles/about-us.css" />
-    <link rel="shortcut icon" href="./assets/svgs/DulceNectarSinLetras.svg" />
-    <title>Dulce Nectar - Nosotros</title>
-  </head>
+  <!-- Bootstrap 5 Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-  <body>
-    <!-- Inicio de navbar -->
-    <nav
-      class="navbar navbar-expand-md nav-color position-fixed w-100 top-0 shadow"
-    >
-      <div class="container-fluid">
-        <!-- Inicio y logo -->
-        <div class="navbar-nav">
-          <a class="navbar-brand nav-link title" href="index.html">
-            <img
-              src="./assets/svgs/DulceNectar.svg"
-              alt="Logo Dulce Nectar"
-              class="nav-img"
-            />DULCE NECTAR
-          </a>
-          <!-- menu Hamburger -->
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- lista de links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"></li>
-            <li class="nav-item">
-              <a
-                class="nav-link active subtitle"
-                aria-current="page"
-                href="about-us.html"
-                id="about"
-                >Nosotros</a
-              >
+  <!-- Local imports -->
+  <link rel="stylesheet" href="./styles/about-us.css" />
+  <link rel="shortcut icon" href="./assets/svgs/DulceNectarSinLetras.svg" />
+  <title>Dulce Nectar-Nosotros</title>
+</head>
+
+<body>
+  <!-- Inicio de navbar -->
+  <nav class="navbar navbar-expand-md nav-color position-fixed w-100 top-0 shadow">
+    <div class="container-fluid">
+      <!-- Inicio y logo -->
+      <div class="navbar-nav">
+        <a class="navbar-brand nav-link title" href="index.html">
+          <img src="./assets/svgs/DulceNectar.svg" alt="Logo Dulce Nectar" class="nav-img" />DULCE NECTAR
+        </a>
+        <!-- menu Hamburger -->
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- lista de links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"></li>
+          <li class="nav-item">
+            <a class="nav-link active subtitle" aria-current="page" href="about-us.html" id="about">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active subtitle" href="contact.html" id="contacto">Contacto</a>
+          </li>
+          <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
+          <li class="nav-item">
+            <a class="nav-link active subtitle" href="store.html" id="shop">Tienda</a>
+          </li>
+          <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
+          <li class="nav-item">
+            <a class="nav-link active subtitle" href="review.html" id="review">Reseña</a>
+          </li>
+        </ul>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+            data-bs-display="static" aria-expanded="false">
+            <i class="bi bi-person-circle"></i>
+          </button>
+          <ul id="id-navbar-account-dropdown-list" class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <li>
+              <a class="dropdown-item" type="button" href="account.html">Mi cuenta</a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active subtitle"
-                href="contact.html"
-                id="contacto"
-                >Contacto</a
-              >
+            <li>
+              <a class="dropdown-item" type="button" href="cart.html">Mi carrito</a>
             </li>
-            <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
-            <li class="nav-item">
-              <a class="nav-link active subtitle" href="store.html" id="shop"
-                >Tienda</a
-              >
+            <hr class="dropdown-divider" />
+            <li id="id-navbar-account-dropdown-login">
+              <a class="dropdown-item" type="button" href="auth/login.html">
+                Iniciar sesión
+              </a>
             </li>
-            <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
-            <li class="nav-item">
-              <a class="nav-link active subtitle" href="review.html" id="review"
-                >Reseña</a
-              >
+            <li id="id-navbar-account-dropdown-logout" class="d-none">
+              <button class="dropdown-item" type="button">Salir</button>
             </li>
           </ul>
-
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary dropdown-toggle"
-              data-bs-toggle="dropdown"
-              data-bs-display="static"
-              aria-expanded="false"
-            >
-              <i class="bi bi-person-circle"></i>
-            </button>
-            <ul
-              id="id-navbar-account-dropdown-list"
-              class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
-            >
-              <li>
-                <a class="dropdown-item" type="button" href="account.html"
-                  >Mi cuenta</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" type="button" href="cart.html"
-                  >Mi carrito</a
-                >
-              </li>
-              <hr class="dropdown-divider" />
-              <li id="id-navbar-account-dropdown-login">
-                <a class="dropdown-item" type="button" href="auth/login.html">
-                  Iniciar sesión
-                </a>
-              </li>
-              <li id="id-navbar-account-dropdown-logout" class="d-none">
-                <button class="dropdown-item" type="button">Salir</button>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </nav>
-    <main class="container pt-5">
+    </div>
+  </nav>
+
+  <main class="container">
     <div class="hero">
       <div class="hero-background"></div>
       <div class="hero-img"></div>
       <div class="hero-text">
         <h2>Los mejores productos basados en miel para tu hogar</h2>
         <p>Conócenos!</p>
-        <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707761510/DulceNectar/honeycomb_gxhw3w.webp" alt="">
+        <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707761510/DulceNectar/honeycomb_gxhw3w.webp"
+          alt="">
       </div>
     </div>
-      <p class="cont">
-        <b
-          >Dulce Néctar es una plataforma de comercio electrónico, especializada
-          en la venta y la distribución de productos naturales basados en miel.
-        </b>
+    <div class="about-section">
+      <p class="">
+        Dulce Néctar es una plataforma de comercio electrónico, especializada
+        en la venta y la distribución de productos naturales basados en miel.
       </p>
+      <div class="mision-cont">
+        <h4 class="">Misión</h4>
+        <p class="">
+          Nuestra misión es proporcionar a nuestros clientes, acceso conveniente y
+          confiable, a una amplia gama de productos naturales y orgánicos
+          derivados de la miel de alta calidad, brindando productos que nutren
+          tanto el cuerpo como al planeta.
+        </p>
+      </div>
 
-      <h4 class="cont">Misión</h4>
-      <p class="cont">
-        Nuestra misión es proporcionar a nuestros clientes, acceso conveniente y
-        confiable, a una amplia gama de productos naturales y orgánicos
-        derivados de la miel de alta calidad, brindando productos que nutren
-        tanto el cuerpo como al planeta.
-      </p>
+      <div class="vision-cont">
+        <h4 class="cont">Visión</h4>
+        <p class="cont">
+          Queremos convertirnos en el principal destino en línea, para aquellos
+          que buscan productos naturales, orgánicos y sostenibles. Aspiramos a ser
+          reconocidos por nuestra excelencia en la calidad de los productos, el
+          servicio al cliente y nuestro compromiso con la salud y el medio
+          ambiente.
+        </p>
+      </div>
 
-      <h4 class="cont">Visión</h4>
-      <p class="cont">
-        Queremos convertirnos en el principal destino en línea, para aquellos
-        que buscan productos naturales, orgánicos y sostenibles. Aspiramos a ser
-        reconocidos por nuestra excelencia en la calidad de los productos, el
-        servicio al cliente y nuestro compromiso con la salud y el medio
-        ambiente.
-      </p>
+    </div>
+  </main>
 
-      <hr class="my-5" />
-      <h4 class="text-center my-3">Equipo de desarrollo</h4>
-      <div class="about-card-cont">
-        <div class="card dn-about-card text-center shadow-lg my-4">
-          <div class="about-header-card">
-            <img src="./assets/imgs/IvanProfile.webp" alt="" />
-          </div>
-          <h4 class="mt-auto">Iván Martínez</h4>
-          <p class="my-3">Desarrollador Java FullStack</p>
-          <div class="about-footer-card my-4">
-            <a href="https://github.com/imart302" target="_blank"
-              ><img src="./assets/imgs/github.png" alt=""
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/iv%C3%A1n-mart%C3%ADnez-55a678151/"
-              target="_blank"
-              ><img src="./assets/imgs/linkedin.png" alt=""
-            /></a>
-          </div>
+  <!-- Inicia footer -->
+  <footer>
+    <div class="container_footer">
+      <div class="social_footer">
+        <a href="https://facebook.com" target="_blank" rel="noopener"><img src="./assets/imgs/facebook.png"
+            alt="face" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener"><img src="./assets/imgs/instagram.png"
+            alt="insta" /></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener"><img src="./assets/imgs/x.png" alt="x" /></a>
+      </div>
+      <div class="navigation_footer">
+        <div class="nav_fo">
+          <a href="index.html">
+            <h3>Inicio</h3>
+          </a>
         </div>
-
-        <div class="card dn-about-card text-center shadow-lg my-4">
-          <div class="about-header-card">
-            <img src="./assets/imgs/LuProfile.webp" alt="" />
-          </div>
-          <h4 class="mt-auto">Luis Gallardo</h4>
-          <p class="my-3">Desarrollador Java FullStack</p>
-          <div class="about-footer-card my-4">
-            <a href="https://github.com/LUIS-GG10" target="_blank"
-              ><img src="./assets/imgs/github.png" alt=""
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/luis-enrique-gonzalez-gallardo-842808289/"
-              target="_blank"
-              ><img src="./assets/imgs/linkedin.png" alt=""
-            /></a>
-          </div>
+        <div class="nav_fo">
+          <a href="store.html">
+            <h3>Tienda</h3>
+          </a>
         </div>
-
-        <div class="card dn-about-card text-center shadow-lg my-4">
-          <div class="about-header-card">
-            <img src="./assets/imgs/antProfile.webp" alt="" />
-          </div>
-          <h4 class="mt-auto">Antonio Alvarez</h4>
-          <p class="my-3">Desarrollador Java FullStack</p>
-          <div class="about-footer-card my-4">
-            <a href="https://github.com/AntonioAlvarezlm386" target="_blank"
-              ><img src="./assets/imgs/github.png" alt=""
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/antonio-l%C3%B3peza7/"
-              target="_blank"
-              ><img src="./assets/imgs/linkedin.png" alt=""
-            /></a>
-          </div>
+        <div class="nav_fo">
+          <a href="review.html">
+            <h3>Reseña</h3>
+          </a>
         </div>
-
-        <div class="card dn-about-card text-center shadow-lg my-4">
-          <div class="about-header-card">
-            <img src="./assets/imgs/danielProfile.jpg" alt="" />
-          </div>
-          <h4 class="mt-auto">Daniel Pech</h4>
-          <p class="my-3">Desarrollador Java FullStack</p>
-          <div class="about-footer-card my-4">
-            <a href="https://github.com/dpechsima" target="_blank"
-              ><img src="./assets/imgs/github.png" alt=""
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/danielpechsima/"
-              target="_blank"
-              ><img src="./assets/imgs/linkedin.png" alt=""
-            /></a>
-          </div>
+        <div class="nav_fo">
+          <a href="about-us.html">
+            <h3>Nosotros</h3>
+          </a>
+        </div>
+        <div class="nav_fo">
+          <a href="contact.html">
+            <h3>Contacto</h3>
+          </a>
         </div>
       </div>
-    </main>
-
-    <!-- Inicia footer -->
-    <footer>
-      <div class="container_footer">
-        <div class="social_footer">
-          <a href="https://facebook.com" target="_blank" rel="noopener"
-            ><img src="./assets/imgs/facebook.png" alt="face"
-          /></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener"
-            ><img src="./assets/imgs/instagram.png" alt="insta"
-          /></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener"
-            ><img src="./assets/imgs/x.png" alt="x"
-          /></a>
-        </div>
-        <div class="navigation_footer">
-          <div class="nav_fo">
-            <a href="index.html">
-              <h3>Inicio</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="store.html">
-              <h3>Tienda</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="review.html">
-              <h3>Reseña</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="about-us.html">
-              <h3>Nosotros</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="contact.html">
-              <h3>Contacto</h3>
-            </a>
-          </div>
-        </div>
-        <div class="copyright_footer">
-          <h5>Dulce Nectar 2023 | Todos los derechos reservados.</h5>
-        </div>
+      <div class="copyright_footer">
+        <h5>Dulce Nectar 2023 | Todos los derechos reservados.</h5>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script type="module" src="./js/about-us.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script type="module" src="./js/about-us.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

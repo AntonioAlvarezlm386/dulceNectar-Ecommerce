@@ -48,12 +48,29 @@
   bottom: -30%;
 }
 
-.cont {
-  margin: 0 auto;
-  max-width: 1000px;
-	text-align: center;
-	margin-top: 50px;
-	justify-content: center;
+/*------------------------------------------------------------------
+  BODY SECTION STYLES
+  ------------------------------------------------------------------*/
+
+.about-section{
+  height: fit-content;
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+}
+
+.about-section > p{
+  border-top: 2px solid var(--divider);
+  border-bottom: 2px solid var(--divider);
+  margin: 2em 0;
+  padding: 1em 3em;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.vision-cont{
+  width: 100vw;
+  border: solid 1px red;
 }
 
 /*----------------------------------------------

@@ -1,8 +1,16 @@
-/**
--------------------------------------------
+/*---------------------------------------------
+FORMAT STYLES
+---------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*-------------------------------------------
   COLOR PALETTE
--------------------------------------------
-*/
+------------------------------------------- */
 :root {
   --background: #FFFFF8;
   --primary: #FFF7D4;
@@ -13,14 +21,59 @@
   --gray: #6a6a6a;
   }
 
-/**
--------------------------------------------
-  BOOTSTRAP BTNS OVERRIDE
-------------------------------------------
-*/
+/*-----------------------------------------
+FONTS
+-----------------------------------------*/
 
-/* Todos los botones */
-.btn-default,
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 1em;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 2em !important;
+  color: var(--dark);
+}
+
+.subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em !important;
+  color: var(--gray);
+}
+
+/*-----------------------------------------
+FONTS
+-----------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Philosopher', sans-serif;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 1em;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 2em !important;
+  color: var(--dark);
+}
+
+.subtitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em !important;
+  color: var(--gray);
+}
+
+/*----------------------------------------------
+  BOOTSTRAP Btn OVERRIDE
+-----------------------------------------------*/
 .btn-primary,
 .btn-success,
 .btn-info,
@@ -31,7 +84,6 @@
   padding: 4px 8px;
 }
 
-/* PRIMARY BTN */
 .btn-primary {
   background-color: var(--accent);
   color: var(--background);
@@ -49,7 +101,6 @@
   background-color: var(--primary);
 }
 
-/* BOTÓN SECUNDARIO  */
 .btn-secondary {
   background-color: var(--dark-primary);
   color: var(--dark);
@@ -66,7 +117,6 @@
   background-color: var(--secondary-hover)
 }
 
-/*  BOTÓN DE INFO AUXILIAR */
 .btn-info {
   background-color: var(--white);
   border-color: var(--black);
@@ -83,47 +133,13 @@
   border-color: var(--black);
 }
 
-/*
------------------------------------------
-FONTS
------------------------------------------
-*/
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Philosopher', sans-serif;
-}
 
-body {
-  font-family: 'Quicksand', sans-serif !important;
-}
-
-.title {
-  font-family: 'Quicksand', sans-serif !important;
-  font-size: 2em !important;
-}
-
-.subtitle {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.5em !important;
-}
-
-/*
------------------------------------------
-CONTAINERS BACKGROUNDS
------------------------------------------
-*/
-
+/*-----------------------------------------
+BACKGROUND
+-----------------------------------------*/
 body, .carousel {
   background-color: var(--primary-background) !important;
-}
-.container,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl
-{
-  background-color: transparent !important;
 }
 
 .modal-content {
@@ -135,39 +151,16 @@ body, .carousel {
 }
 
 .dropdown-menu {
-  background-color: var(--white);
+  background-color: var(--background);
 }
 
 .dropdown-item:hover {
-  background-color: var(--yellow1-dark);
+  background-color: var(--divider);
 }
 
-
-/*
------------------------------------------
-BOOTSTRAP´S NAVBAR
------------------------------------------
-*/
-.navbar {
-  z-index: 1030;
-}
-
-
-/*
------------------------------------------
-SEMANTIC ELEMENTS
------------------------------------------
-*/
-
-main {
-  min-height: 100vh; /* to keep footer non-visible */
-  margin-top: 5rem;
-}
-
-body {
-  z-index: -2;
-  position: relative;
-}
+/*---------------------------------------------------------
+BACKGROUND  DECORATION
+---------------------------------------------------------*/
 
 .fancy_background {
   z-index: -1;
@@ -183,12 +176,7 @@ body {
   object-fit: contain;
   -webkit-filter: drop-shadow(5px 5px 5px var(--black));
   filter: drop-shadow(5px 5px 5px var(--black));
-  opacity: 0.7;
-  /*
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-delay: 500ms;
-  */
+  opacity: 0.6;
 }
 
 .fancy_background img:nth-child(1){
@@ -249,8 +237,6 @@ select option:hover {
 select option:checked{
   background-color: var(--yellow2-light);
   }
-/* Establece el fondo transparente por defecto para todas las opciones */
-/* Establece el fondo transparente por defecto para todas las opciones */
 
 .dropdown-toggle:focus,
 .dropdown-toggle:active
@@ -260,13 +246,9 @@ select option:checked{
 
 }
 
-/*
-----------------------------------------------------
+/*----------------------------------------------------
 MEDIA QUERIES FOR COMMON SIZES
-----------------------------------------------------
-*/
-
-/* Extra small devices (phones, 600px and down) */
+----------------------------------------------------*/
 @media only screen and (max-width: 600px) {
   .fancy_background img:nth-child(3){
     left: -20%;
@@ -285,7 +267,6 @@ MEDIA QUERIES FOR COMMON SIZES
   
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .fancy_background img:nth-child(3){
     left: -20%;
@@ -300,7 +281,6 @@ MEDIA QUERIES FOR COMMON SIZES
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .fancy_background img:nth-child(3){
     left: -20%;
@@ -315,7 +295,6 @@ MEDIA QUERIES FOR COMMON SIZES
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .fancy_background img:nth-child(3){
     left: -10%;
@@ -330,7 +309,6 @@ MEDIA QUERIES FOR COMMON SIZES
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .fancy_background img:nth-child(3){
     left: -10%;

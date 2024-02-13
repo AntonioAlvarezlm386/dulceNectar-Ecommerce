@@ -1,61 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google fonts imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap 5 styles -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+  <!-- Google fonts imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
-    <!-- Bootstrap 5 Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+  <!-- Bootstrap 5 styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-    <!-- Local imports -->
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="shortcut icon" href="./assets/svgs/DulceNectarSinLetras.svg" />
-    <title>Dulce Nectar</title>
-  </head>
+  <!-- Bootstrap 5 Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-  <body>
-    <!-- Inicio de navbar -->
-    <nav
-      class="navbar navbar-expand-md nav-color position-fixed w-100 top-0"
-    >
+  <!-- Local imports -->
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="shortcut icon" href="./assets/svgs/DulceNectarSinLetras.svg" />
+  <title>Dulce Nectar</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md nav-color position-fixed w-100 top-0">
       <div class="container-fluid">
         <!-- Inicio y logo -->
         <div class="navbar-nav">
           <a class="navbar-brand nav-link title" href="index.html">
-            <img
-              src="./assets/svgs/DulceNectar.svg"
-              alt="Logo Dulce Nectar"
-              class="nav-img"
-            />DULCE NECTAR
+            <img src="./assets/svgs/DulceNectar.svg" alt="Logo Dulce Nectar" class="nav-img" />DULCE NECTAR
           </a>
           <!-- menu Hamburger -->
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- lista de links -->
@@ -63,59 +46,32 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"></li>
             <li class="nav-item">
-              <a
-                class="nav-link active subtitle"
-                aria-current="page"
-                href="about-us.html"
-                id="about"
-                >Nosotros</a
-              >
+              <a class="nav-link active subtitle" aria-current="page" href="about-us.html" id="about">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active subtitle"
-                href="contact.html"
-                id="contacto"
-                >Contacto</a
-              >
+              <a class="nav-link active subtitle" href="contact.html" id="contacto">Contacto</a>
             </li>
             <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
             <li class="nav-item">
-              <a class="nav-link active subtitle" href="store.html" id="shop"
-                >Tienda</a
-              >
+              <a class="nav-link active subtitle" href="store.html" id="shop">Tienda</a>
             </li>
             <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
             <li class="nav-item">
-              <a class="nav-link active subtitle" href="review.html" id="review"
-                >Reseña</a
-              >
+              <a class="nav-link active subtitle" href="review.html" id="review">Reseña</a>
             </li>
           </ul>
 
           <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary dropdown-toggle"
-              data-bs-toggle="dropdown"
-              data-bs-display="static"
-              aria-expanded="false"
-            >
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
               <i class="bi bi-person-circle"></i>
             </button>
-            <ul
-              id="id-navbar-account-dropdown-list"
-              class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
-            >
+            <ul id="id-navbar-account-dropdown-list" class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
               <li>
-                <a class="dropdown-item" type="button" href="account.html"
-                  >Mi cuenta</a
-                >
+                <a class="dropdown-item" type="button" href="account.html">Mi cuenta</a>
               </li>
               <li>
-                <a class="dropdown-item" type="button" href="cart.html"
-                  >Mi carrito</a
-                >
+                <a class="dropdown-item" type="button" href="cart.html">Mi carrito</a>
               </li>
               <hr class="dropdown-divider" />
               <li id="id-navbar-account-dropdown-login">
@@ -131,316 +87,265 @@
         </div>
       </div>
     </nav>
+  </header>
 
-    <!-- El background con abejas y panales -->
-    <div class="fancy_background">
-      <img class="fancy_background_item" src="./assets/imgs/bee.png" alt="">
-      <img class="fancy_background_item" src="./assets/imgs/bee.png" alt="">
-      <img class="fancy_background_item" src="./assets/imgs/honeycomb.png" alt="">
-      <img class="fancy_background_item" src="./assets/imgs/honeycomb.png" alt="">
+
+  <!-- El background con abejas y panales -->
+  <div class="fancy_background">
+    <img class="fancy_background_item" src="./assets/imgs/bee.png" alt="">
+    <img class="fancy_background_item" src="./assets/imgs/bee.png" alt="">
+    <img class="fancy_background_item" src="./assets/imgs/honeycomb.png" alt="">
+    <img class="fancy_background_item" src="./assets/imgs/honeycomb.png" alt="">
+  </div>
+  <!-- Inicia contenido principal -->
+  <main id="id-index-main" class="container pt-5">
+    <!-- Carousel de bienvenida -->
+    <div id="id-carousel-main" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#id-carousel-main" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#id-carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#id-carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="dn-carousel-inner-item">
+            <h1 class="dn-carousel-text dn-carousel-text-c1">
+              Los mejores productos de la miel
+            </h1>
+            <h1 class="dn-carousel-text dn-carousel-text-c3">
+              ... para tu hogar
+            </h1>
+            <img src="./assets/imgs/honey1.webp" class="d-block w-100" alt="Honey" />
+            <div class="dn-carousel-logo">
+              <img src="./assets/imgs/DulceNectar.png" alt="Dulce nectar logo" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="dn-carousel-inner-item">
+            <h1 class="dn-carousel-text dn-carousel-text-c1">
+              Contamos con gran variedad de productos
+            </h1>
+            <h1 class="dn-carousel-text dn-carousel-text-c3">
+              ... todos de origen natural
+            </h1>
+            <img src="./assets/imgs/honey-candy.webp" class="d-block w-100" alt="Honey Candy" />
+            <div class="dn-carousel-logo">
+              <img src="./assets/imgs/DulceNectar.png" alt="Dulce nectar logo" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="dn-carousel-inner-item">
+            <h1 class="dn-carousel-text dn-carousel-text-c1">
+              Visita nuestra tienda
+            </h1>
+            <h1 class="dn-carousel-text dn-carousel-text-c3">
+              ... y encuentra lo que necesites
+            </h1>
+            <img src="./assets/imgs/propolio.webp" class="d-block w-100" alt="..." />
+            <div class="dn-carousel-logo">
+              <img src="./assets/imgs/DulceNectar.png" alt="Dulce nectar logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev z-3" type="button" data-bs-target="#id-carousel-main" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next z-3" type="button" data-bs-target="#id-carousel-main" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- Inicia contenido principal -->
-    <main id="id-index-main" class="container pt-5">
-      <!-- Carousel de bienvenida -->
-      <div id="id-carousel-main" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#id-carousel-main"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#id-carousel-main"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#id-carousel-main"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="dn-carousel-inner-item">
-              <h1 class="dn-carousel-text dn-carousel-text-c1">
-                Los mejores productos de la miel
-              </h1>
-              <h1 class="dn-carousel-text dn-carousel-text-c3">
-                ... para tu hogar
-              </h1>
-              <img
-                src="./assets/imgs/honey1.webp"
-                class="d-block w-100"
-                alt="Honey"
-              />
-              <div class="dn-carousel-logo">
-                <img
-                  src="./assets/imgs/DulceNectar.png"
-                  alt="Dulce nectar logo"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="dn-carousel-inner-item">
-              <h1 class="dn-carousel-text dn-carousel-text-c1">
-                Contamos con gran variedad de productos
-              </h1>
-              <h1 class="dn-carousel-text dn-carousel-text-c3">
-                ... todos de origen natural
-              </h1>
-              <img
-                src="./assets/imgs/honey-candy.webp"
-                class="d-block w-100"
-                alt="Honey Candy"
-              />
-              <div class="dn-carousel-logo">
-                <img
-                  src="./assets/imgs/DulceNectar.png"
-                  alt="Dulce nectar logo"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="dn-carousel-inner-item">
-              <h1 class="dn-carousel-text dn-carousel-text-c1">
-                Visita nuestra tienda
-              </h1>
-              <h1 class="dn-carousel-text dn-carousel-text-c3">
-                ... y encuentra lo que necesites
-              </h1>
-              <img
-                src="./assets/imgs/propolio.webp"
-                class="d-block w-100"
-                alt="..."
-              />
-              <div class="dn-carousel-logo">
-                <img
-                  src="./assets/imgs/DulceNectar.png"
-                  alt="Dulce nectar logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev z-3"
-          type="button"
-          data-bs-target="#id-carousel-main"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next z-3"
-          type="button"
-          data-bs-target="#id-carousel-main"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <div class="my-5">
-        <hr>
-      </div>
-      <!-----------------------------------------------------------------------
+    <div class="my-5">
+      <hr>
+    </div>
+    <!-----------------------------------------------------------------------
         WEEK PRODUCTS SECTION
       -------------------------------------------------------------------------->
-      <div class="container-fluid p-0 my-5 max-container">
-        <h2 class="my-5 text-center">Productos de la semana!</h1>
+    <div class="container-fluid p-0 my-5 max-container">
+      <h2 class="my-5 text-center">Productos de la semana!</h1>
         <div id="products-week" class="dn-grid">
 
-            <div class="weekProduct-card shadow-lg">
-              <div class="weekProduct-header mt-3 mx-auto">
-                <div class="header-text">
-                  <h4>Mascarilla Facial</h4>
-                  <p>Dulce Nectar</p>
-                </div>
-              </div>
-              <div class="weekProduct-body">
-                <img
-                src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
-                alt="Mascarilla Facial"
-              />
-              </div>
-              <div class="weekProduct-footer mx-4 text-center">
-                <p>
-                  Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
-                </p>
-                <button class="btn-primary">
-                  Ir a la tienda
-                </button>
+          <div class="weekProduct-card shadow-lg">
+            <div class="weekProduct-header mt-3 mx-auto">
+              <div class="header-text">
+                <h4>Mascarilla Facial</h4>
+                <p>Dulce Nectar</p>
               </div>
             </div>
-            <div class="weekProduct-card shadow-lg">
-              <div class="weekProduct-header mt-3 mx-auto">
-                <div class="header-text">
-                  <h4>Mascarilla Facial</h4>
-                  <p>Dulce Nectar</p>
-                </div>
-              </div>
-              <div class="weekProduct-body">
-                <img
-                src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
-                alt="Mascarilla Facial"
-              />
-              </div>
-              <div class="weekProduct-footer mx-4 text-center">
-                <p>
-                  Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
-                </p>
-                <button class="btn-primary">
-                  Ir a la tienda
-                </button>
+            <div class="weekProduct-body">
+              <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
+                alt="Mascarilla Facial" />
+            </div>
+            <div class="weekProduct-footer mx-4 text-center">
+              <p>
+                Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
+              </p>
+              <button class="btn-primary">
+                Ir a la tienda
+              </button>
+            </div>
+          </div>
+          <div class="weekProduct-card shadow-lg">
+            <div class="weekProduct-header mt-3 mx-auto">
+              <div class="header-text">
+                <h4>Mascarilla Facial</h4>
+                <p>Dulce Nectar</p>
               </div>
             </div>
-            <div class="weekProduct-card shadow-lg">
-              <div class="weekProduct-header mt-3 mx-auto">
-                <div class="header-text">
-                  <h4>Mascarilla Facial</h4>
-                  <p>Dulce Nectar</p>
-                </div>
-              </div>
-              <div class="weekProduct-body">
-                <img
-                src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
-                alt="Mascarilla Facial"
-              />
-              </div>
-              <div class="weekProduct-footer mx-4 text-center">
-                <p>
-                  Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
-                </p>
-                <button class="btn-primary">
-                  Ir a la tienda
-                </button>
+            <div class="weekProduct-body">
+              <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
+                alt="Mascarilla Facial" />
+            </div>
+            <div class="weekProduct-footer mx-4 text-center">
+              <p>
+                Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
+              </p>
+              <button class="btn-primary">
+                Ir a la tienda
+              </button>
+            </div>
+          </div>
+          <div class="weekProduct-card shadow-lg">
+            <div class="weekProduct-header mt-3 mx-auto">
+              <div class="header-text">
+                <h4>Mascarilla Facial</h4>
+                <p>Dulce Nectar</p>
               </div>
             </div>
+            <div class="weekProduct-body">
+              <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
+                alt="Mascarilla Facial" />
+            </div>
+            <div class="weekProduct-footer mx-4 text-center">
+              <p>
+                Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
+              </p>
+              <button class="btn-primary">
+                Ir a la tienda
+              </button>
+            </div>
+          </div>
 
         </div>
-      </div>
+    </div>
 
-      <div class="my-5">
-        <hr>
-      </div>
+    <div class="my-5">
+      <hr>
+    </div>
 
-      
 
-      <!----------------------------------------------------------------------
+
+    <!----------------------------------------------------------------------
        NEWS SECTION
        ---------------------------------------------------------------------->
-      <div class="container-fluid my-5">
-        <h2 class="text-center">
-          Noticias y artículos sobre el mundo de la miel!
-        </h2>
-        <div class="dn-news-container">
-          <div class="newsCard-container">
-            <div class="card-background ">
-              <div class="news-img ">
-              </div>
-              <div class="newsCard-desc">
-                <h5>Título de la noticia</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut ullam itaque fugiat reiciendis quibusdam.</p>
-                <div>
-                  <button class="btn-secondary">Leer articulo</button>
-                </div>              </div>
+    <div class="container-fluid my-5">
+      <h2 class="text-center">
+        Noticias y artículos sobre el mundo de la miel!
+      </h2>
+      <div class="dn-news-container">
+        <div class="newsCard-container">
+          <div class="card-background ">
+            <div class="news-img ">
             </div>
-          </div>
-        </div>
-        <div class="dn-news-container">
-          <div class="newsCard-container">
-            <div class="card-background ">
-              <div class="news-img ">
+            <div class="newsCard-desc">
+              <h5>Título de la noticia</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut
+                ullam itaque fugiat reiciendis quibusdam.</p>
+              <div>
+                <button class="btn-secondary">Leer articulo</button>
               </div>
-              <div class="newsCard-desc">
-                <h5>Título de la noticia</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut ullam itaque fugiat reiciendis quibusdam.</p>
-                <div>
-                  <button class="btn-secondary">Leer articulo</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="dn-news-container">
-          <div class="newsCard-container">
-            <div class="card-background ">
-              <div class="news-img ">
-              </div>
-              <div class="newsCard-desc">
-                <h5>Título de la noticia</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut ullam itaque fugiat reiciendis quibusdam.</p>
-                <div>
-                  <button class="btn-secondary">Leer articulo</button>
-                </div>              </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-
-    <!-- Inicia footer -->
-    <footer>
-      <div class="container_footer">
-        <div class="social_footer">
-          <a href="https://facebook.com" target="_blank" rel="noopener"
-            ><img src="./assets/imgs/facebook.png" alt="face"
-          /></a>
-          <a href="https://instagram.com" target="_blank" rel="noopener"
-            ><img src="./assets/imgs/instagram.png" alt="insta"
-          /></a>
-          <a href="https://twitter.com" target="_blank" rel="noopener"
-            ><img src="./assets/imgs/x.png" alt="x"
-          /></a>
-        </div>
-        <div class="navigation_footer">
-          <div class="nav_fo">
-            <a href="index.html">
-              <h3>Inicio</h3>
-            </a>
+      <div class="dn-news-container">
+        <div class="newsCard-container">
+          <div class="card-background ">
+            <div class="news-img ">
+            </div>
+            <div class="newsCard-desc">
+              <h5>Título de la noticia</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut
+                ullam itaque fugiat reiciendis quibusdam.</p>
+              <div>
+                <button class="btn-secondary">Leer articulo</button>
+              </div>
+            </div>
           </div>
-          <div class="nav_fo">
-            <a href="store.html">
-              <h3>Tienda</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="review.html">
-              <h3>Reseña</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="about-us.html">
-              <h3>Nosotros</h3>
-            </a>
-          </div>
-          <div class="nav_fo">
-            <a href="contact.html">
-              <h3>Contacto</h3>
-            </a>
-          </div>
-        </div>
-        <div class="copyright_footer">
-          <h5>Dulce Nectar 2023 | Todos los derechos reservados.</h5>
         </div>
       </div>
-    </footer>
+      <div class="dn-news-container">
+        <div class="newsCard-container">
+          <div class="card-background ">
+            <div class="news-img ">
+            </div>
+            <div class="newsCard-desc">
+              <h5>Título de la noticia</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut
+                ullam itaque fugiat reiciendis quibusdam.</p>
+              <div>
+                <button class="btn-secondary">Leer articulo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <script src="./js/index.js" type="module" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Inicia footer -->
+  <footer>
+    <div class="container_footer">
+      <div class="social_footer">
+        <a href="https://facebook.com" target="_blank" rel="noopener"><img src="./assets/imgs/facebook.png"
+            alt="face" /></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener"><img src="./assets/imgs/instagram.png"
+            alt="insta" /></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener"><img src="./assets/imgs/x.png" alt="x" /></a>
+      </div>
+      <div class="navigation_footer">
+        <div class="nav_fo">
+          <a href="index.html">
+            <h3>Inicio</h3>
+          </a>
+        </div>
+        <div class="nav_fo">
+          <a href="store.html">
+            <h3>Tienda</h3>
+          </a>
+        </div>
+        <div class="nav_fo">
+          <a href="review.html">
+            <h3>Reseña</h3>
+          </a>
+        </div>
+        <div class="nav_fo">
+          <a href="about-us.html">
+            <h3>Nosotros</h3>
+          </a>
+        </div>
+        <div class="nav_fo">
+          <a href="contact.html">
+            <h3>Contacto</h3>
+          </a>
+        </div>
+      </div>
+      <div class="copyright_footer">
+        <h5>Dulce Nectar 2023 | Todos los derechos reservados.</h5>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/index.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
