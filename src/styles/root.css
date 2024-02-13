@@ -15,7 +15,7 @@
 
 /**
 -------------------------------------------
-  SOBRE-ESCRITURA DE BOTONES DE BOOTSTRAP 
+  BOOTSTRAP BTNS OVERRIDE
 ------------------------------------------
 */
 
@@ -99,6 +99,7 @@ body {
 
 .title {
   font-family: 'Quicksand', sans-serif !important;
+  font-size: 2em !important;
 }
 
 .subtitle {
@@ -333,13 +334,13 @@ MEDIA QUERIES FOR COMMON SIZES
 @media only screen and (min-width: 1200px) {
   .fancy_background img:nth-child(3){
     left: -10%;
-    width: 50vw;
+    width: 40vw;
     top: 100vh;
   }
 
   .fancy_background img:nth-child(4){
     right: -10%;
-    width: 50vw;
+    width: 40vw;
     top: 200vh;
   }
 }

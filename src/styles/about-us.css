@@ -2,6 +2,52 @@
 @import './components/navbar.css';
 @import './components/footer.css';
 
+/*----------------------------------------------------
+  HERO STYLES
+------------------------------------------------------*/
+
+.hero{
+  height: 45em;
+  position: relative;
+}
+
+.hero-background{
+  background-color: var(--primary);
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  right: 0;
+}
+
+.hero-img{
+  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1707843852/DulceNectar/honey1_ayltil.webp);
+  position: absolute;
+  height: 80%;
+  width: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-text{
+  background-color: var(--accent);
+  height: 15em;
+  width: 60%;
+  padding: 3.5em 3em;
+  text-align: center;
+  position: relative;
+  right: 2em;
+  overflow: hidden;
+  color: var(--divider);
+  left: 35%;
+  top: 40%;
+}
+.hero-text img{
+  position: absolute;
+  width: 150px;
+  right: -5%;
+  bottom: -30%;
+}
+
 .cont {
   margin: 0 auto;
   max-width: 1000px;
