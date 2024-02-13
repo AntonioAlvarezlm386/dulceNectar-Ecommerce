@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Google fonts imports -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600&display=swap"
     rel="stylesheet">
@@ -28,13 +26,12 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md nav-color position-fixed w-100 top-0">
+    <nav class="navbar navbar-expand-md position-fixed w-100 top-0">
       <div class="container-fluid">
-        <!-- Inicio y logo -->
+        <!-- INDEX & LOGO -->
         <div class="navbar-nav">
-          <a class="navbar-brand nav-link" href="index.html">
-            <img src="./assets/svgs/DulceNectar.svg" alt="Logo" class="nav-img" />
-            <span class="title">Dulce Nectar</span>
+          <a class="navbar-brand nav-link philosopher" href="index.html">
+            <img src="./assets/svgs/DulceNectar.svg" alt="Logo" class="nav-img" /><span class="text-dark">DULCE NECTAR</span>
           </a>
         </div>
 
@@ -44,23 +41,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- lista de links -->
-        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+        <!-- LINKS -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"></li>
             <li class="nav-item">
-              <a class="nav-link active subtitle" aria-current="page" href="about-us.html" id="about">Nosotros</a>
+              <a class="nav-link active subtitle mx-3" href="store.html" id="shop">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active subtitle" href="contact.html" id="contacto">Contacto</a>
+              <a class="nav-link active subtitle mx-3" href="review.html" id="review">Reseña</a>
             </li>
-            <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
             <li class="nav-item">
-              <a class="nav-link active subtitle" href="store.html" id="shop">Tienda</a>
-            </li>
-            <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
-            <li class="nav-item">
-              <a class="nav-link active subtitle" href="review.html" id="review">Reseña</a>
+              <a class="nav-link active subtitle mx-3" aria-current="page" href="about-us.html" id="about">Nosotros</a>
             </li>
           </ul>
 
@@ -93,7 +85,7 @@
   </header>
 
 
-  <!-- El background con abejas y panales -->
+  <!-- BACKGROUND -->
   <div class="fancy_background">
     <img class="fancy_background_item" src="./assets/imgs/bee.png" alt="">
     <img class="fancy_background_item" src="./assets/imgs/bee.png" alt="">
@@ -102,7 +94,7 @@
   </div>
 
   <main id="id-index-main" class="container pt-5">
-    <!-- Carousel de bienvenida -->
+    <!-- CARRUSEL -->
     <div id="id-carousel-main" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#id-carousel-main" data-bs-slide-to="0" class="active" aria-current="true"
@@ -164,9 +156,6 @@
       </button>
     </div>
 
-    <div class="my-5">
-      <hr>
-    </div>
     <!-----------------------------------------------------------------------
         WEEK PRODUCTS SECTION
       -------------------------------------------------------------------------->

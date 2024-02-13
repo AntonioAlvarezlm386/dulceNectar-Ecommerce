@@ -1,41 +1,31 @@
 /*  definicion de Posisoin para que no se vaya con el scroll  */
-nav .navbar {
+nav{
   top: 0%;
   position: sticky !important;
-  z-index: 10;
-}
-
-.navbar{
-  z-index: 1000;
-}
-
-nav {
   background-color: var(--dark-primary);
+  z-index: 1000;
+  font-weight: 400;
+  font-size: 0.9em;
 }
 
-nav .nav-img {
+.nav-img {
   width: 50px !important;
-  padding: 0;
+  margin: 0 0.5em 0 0 ;
 }
 
-/* USER ICON  */
-nav .cuenta {
+.philosopher span{
+  font-size: 1.2em;
+}
+
+.cuenta {
   width: 30px !important;
   padding: 0;
 }
 
-nav .nav-link:hover {
-  color: var(--primary) !important;
+.nav-link:hover {
+  color: var(--gray) !important;
 }
 
-nav .title:hover {
+.selector {
   color: var(--primary) !important;
-}
-
-nav .selector {
-  color: var(--primary) !important;
-}
-
-nav .title {
-  font-size: 1.5em !important;
 }

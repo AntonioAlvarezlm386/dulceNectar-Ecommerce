@@ -50,6 +50,11 @@ p {
 .text-dark{color: var(--dark);}
 .text-gray{color: var(--gray);}
 
+.philosopher{
+  font-family: 'Philosopher', sans-serif !important;
+  color: #683F35;
+}
+
 /*-----------------------------------------
 FONTS
 -----------------------------------------*/
