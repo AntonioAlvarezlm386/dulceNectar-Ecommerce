@@ -1,10 +1,10 @@
 @import '../root.css';
 
 footer {
-    background-color: var(--secondary);
+    background-color: var(--accent);
     width: 100%;
     padding: 30px 0;
-    color: var(--font-color-light);
+    color: var(--background);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -51,5 +51,5 @@ footer img {
 }
 
 footer a {
-    color: var(--font-color-light);
+    color: var(--background);
 }

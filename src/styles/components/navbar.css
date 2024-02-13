@@ -7,7 +7,7 @@ nav .navbar {
 
 /* color principal de la navbar */
 nav {
-  background-color: var(--yellow2-base);
+  background-color: var(--dark-primary);
 }
 
 /* logo de img */
@@ -23,15 +23,15 @@ nav .cuenta {
 }
 
 nav .nav-link:hover {
-  color: var(--yellow1-base) !important;
+  color: var(--primary) !important;
 }
 
 nav .title:hover {
-  color: var(--yellow1-base) !important;
+  color: var(--primary) !important;
 }
 
 nav .selector {
-  color: var(--yellow3-base) !important;
+  color: var(--primary) !important;
 }
 
 nav .title {

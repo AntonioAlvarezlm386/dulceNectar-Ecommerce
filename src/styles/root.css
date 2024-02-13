@@ -1,34 +1,17 @@
 /**
 -------------------------------------------
-  PALETA DE COLORES DEL NEGOCIO
+  COLOR PALETTE
 -------------------------------------------
 */
 :root {
-  --yellow1-base: #FFF7D4;
-  --yellow1-light: #FCFAF0;
-  --yellow1-dark: #DECD83;
-  --yellow2-base: #FFD95A;
-  --yellow2-light: #FFE17D;
-  --yellow2-dark: #D6AB1C;
-  --yellow3-base: #C07F00;
-  --yellow3-light: #F2AB1D;
-  --yellow3-dark: #916102;
-  --brown1-base: #683F35;
-  --brown1-light: #9D6254;
-  --brown1-dark: #482B24;
-  --black: #28282B;
-  --gray: #505050;
-  --white: #F9F6EE;
-  --primary: var(--yellow2-base);
-  --primary-hover: var(--yellow2-light);
-  --secondary: var(--brown1-base);
-  --secondary-hover: var(--brown1-light);
-  --border-color: var(--black);
-  --primary-background: var(--yellow1-light);
-  --paper-background: var(--white);
-  --font-color-light: var(--white);
-  --font-color-dark: var(--black);
-}
+  --background: #FFFFF8;
+  --primary: #FFF7D4;
+  --dark-primary: #FFD95A;
+  --accent: #683F35;
+  --divider: #F1D18A;
+  --dark: #303030;
+  --gray: #6a6a6a;
+  }
 
 /**
 -------------------------------------------
@@ -44,84 +27,57 @@
 .btn-warning,
 .btn-danger,
 .btn-secondary {
-  border-radius: 23px;
+  border-radius: 5px;
+  padding: 4px 8px;
 }
 
-/* BOTÓN PRIMARIO */
-
-/* Botón primario solo  */
+/* PRIMARY BTN */
 .btn-primary {
-  background-color: var(--primary);
-  color: var(--font-color-dark);
-  border-color: var(--border-color);
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
 }
 
-/* Botón primario desactivado  */
-.btn.btn-primary[disabled] {
-  background-color: var(--primary);
-  color: var(--gray);
-  border-style: none;
-  border-color: var(--border-color);
-}
-
-/* Botón primario hover */
 .btn-primary:hover {
-  background-color: var(--primary-hover);
-  border-color: var(--white);
-  border-color: var(--black);
-  color: var(--black);
+  background-color: var(--divider);
+  border: 1px solid var(--dark);
+  color: var(--dark);
 }
 
-/* Botón primario activo y activo con focus  */
 .btn-primary:active,
 .btn-primary:active:focus {
-  background-color: var(--primary-hover);
+  background-color: var(--primary);
 }
 
 /* BOTÓN SECUNDARIO  */
-
-/* Botón secundario normal */
 .btn-secondary {
-  background-color: var(--secondary);
-  color: var(--white);
-  border-color: var(--black);
+  background-color: var(--dark-primary);
+  color: var(--dark);
+  border: 1px var(--accent) solid;
 }
 
-/* Botón secundario hover */
 .btn-secondary:hover {
-  background-color: var(--secondary-hover);
-  border-color: var(--black);
+  background-color: var(--primary);
+  border: 2px var(--accent) solid;
 }
 
-/* Botón secundario activo y activo con focus  */
 .btn-primary:active,
 .btn-primary:active:focus {
   background-color: var(--secondary-hover)
 }
 
-/* Botón secundario desactivado */
-.btn.btn-secondary[disabled] {
-  background-color: var(--secondary);
-  color: var(--white);
-  border-color: var(--white);
-}
-
 /*  BOTÓN DE INFO AUXILIAR */
-
-/* Botón info por defecto */
 .btn-info {
   background-color: var(--white);
   border-color: var(--black);
 }
 
-/*Botón info en hover*/
 .btn-info:hover {
   background-color: var(--black);
   color: var(--white);
   border-color: var(--white);
 }
 
-/* Botón info deshabilitado */
 .btn.btn-info[disabled] {
   background-color: var(--white);
   border-color: var(--black);
@@ -129,51 +85,33 @@
 
 /*
 -----------------------------------------
-SOBRE-ESCRITURA DE FUENTES
+FONTS
 -----------------------------------------
 */
 
-/* Fuente y tamaño de títulos*/
-h1 {
-  font-family: 'Instrument Serif', serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Philosopher', sans-serif;
 }
 
-/* Headers h1 h2 */
-h2,
-h3 {
-  font-family: 'Instrument Serif', serif;
-}
-
-/* Headers h4, h5, h6*/
-h4,
-h5,
-h6 {
-  font-family: 'Instrument Serif', serif;
-}
-
-/* Fuente y tamaño de texto del cuerpo */
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Quicksand', sans-serif !important;
 }
 
-/* Fuente y tamaño de títulos para navbars*/
 .title {
-  font-family: 'Instrument Serif', serif !important;
+  font-family: 'Quicksand', sans-serif !important;
 }
 
-/* Fuente y tamaño de subtítulos */
 .subtitle {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.5em !important;
 }
 
 /*
 -----------------------------------------
-SOBRE-ESCRITURA DE BACKGROUND DE CONTENDEDORES
+CONTAINERS BACKGROUNDS
 -----------------------------------------
 */
 
-/* container de bootstrap y body */
 body, .carousel {
   background-color: var(--primary-background) !important;
 }
@@ -206,7 +144,7 @@ body, .carousel {
 
 /*
 -----------------------------------------
-SOBRE-ESCRITURA COMPONENTE NAVBAR DE BOOTSTRAP
+BOOTSTRAP´S NAVBAR
 -----------------------------------------
 */
 .navbar {
@@ -216,12 +154,12 @@ SOBRE-ESCRITURA COMPONENTE NAVBAR DE BOOTSTRAP
 
 /*
 -----------------------------------------
-ELEMENTOS SEMÁNTICOS
+SEMANTIC ELEMENTS
 -----------------------------------------
 */
 
 main {
-  min-height: 100vh; /* Para asegurar que el footer siempre este debajo */
+  min-height: 100vh; /* to keep footer non-visible */
   margin-top: 5rem;
 }
 
@@ -303,10 +241,6 @@ body {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--yellow3-light);
 }
 
-/* option{
-  background-color: var(--yellow1-light)
-}*/
-
 select option:hover {
   background-color: var(--yellow1-light);
   color:white;
@@ -324,43 +258,12 @@ select option:checked{
   border: var(--yellow2-base);
 
 }
-/* Cambia el color del fondo solo para la opción seleccionada al hacer hover */
-
-/* Cambia el color del fondo solo para la opción seleccionada */
-
-/* @keyframes move1 {
-  0% {
-    transform: translate(-10rem, -10rem) rotate(90deg);
-  }
-  25% {
-    transform: translate(0, 0) rotate(90deg);
-  }
-  50% {
-    transform: rotate(-90deg) translate(10rem, 10rem);
-  }
-  75% {
-    transform: translate(-10rem, -10rem) rotate(-90deg);
-  }
-  100% {
-    transform: translate(-10rem, -10rem) rotate(90deg);
-  }
-}
-
-@keyframes move2 {
-  0% {
-    transform: translate(-10rem, -10rem) rotate(90deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(90deg);
-  }
-} */
 
 /*
 ----------------------------------------------------
 MEDIA QUERIES FOR COMMON SIZES
 ----------------------------------------------------
 */
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -439,49 +342,4 @@ MEDIA QUERIES FOR COMMON SIZES
     width: 50vw;
     top: 200vh;
   }
-}
-
-/*------------------------------------------------
-  Banner
- ------------------------------------------------*/
-.bannerContainer {
-  border-color: var(--yellow1-dark);
-  border-style: solid;
-  border-width: 1px;
-	overflow: hidden;
-	text-align: center;
-	position: relative;
-	z-index: 3;
-  padding: 10px 0;
-  margin-bottom: 4rem;
-  min-height: 13em;
-  border-radius: 7px;
-  box-shadow: 1px -1px 23px 5px rgba(150,150,150,0.38) inset;
-  -webkit-box-shadow: 1px -1px 23px 5px rgba(150,150,150,0.38) inset;
-  -moz-box-shadow: 1px -1px 23px 5px rgba(150,150,150,0.38) inset;
-}
-
-.banner-logo {
-	width: 90px;
-  margin: 0 auto;
-  -webkit-filter: drop-shadow(5px 5px 5px var(--black));
-  filter: drop-shadow(5px 5px 5px var(--black));
-}
-
-.banner-honeyComb1{
-	position: absolute;
-  width: clamp(150px, 20vw, 230px);
-	bottom: -55px;
-	left: -55px;
-	z-index: -1;
-	opacity: 0.4;
-}
-
-.banner-honeyComb2{
-	position: absolute;
-  width: clamp(150px, 20vw, 230px);
-	top: -50px;
-	right: -55px;
-	z-index: -1;
-	opacity: 0.4;
 }

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google fonts imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 5 styles -->
     <link
@@ -36,7 +33,7 @@
   <body>
     <!-- Inicio de navbar -->
     <nav
-      class="navbar navbar-expand-md nav-color position-fixed w-100 top-0 shadow"
+      class="navbar navbar-expand-md nav-color position-fixed w-100 top-0"
     >
       <div class="container-fluid">
         <!-- Inicio y logo -->
@@ -256,54 +253,134 @@
       <div class="my-5">
         <hr>
       </div>
-      <!-- Productos de la semana -->
-      <div class="container-fluid p-0 my-5">
-        <h1 class="my-5 text-center text-md-start">Productos de la semana</h1>
-        <div id="id-products-week" class="dn-grid">
-          <!-- Keep this for as template -->
-          <!--
-          <div>
-            <div class="dn-week-product-card shadow-lg">
-              <img src="./assets/imgs/miel_frasco.webp" alt="..." />
-              <div class="dn-card-body">
-                <h4>Title</h4>
+      <!-----------------------------------------------------------------------
+        WEEK PRODUCTS SECTION
+      -------------------------------------------------------------------------->
+      <div class="container-fluid p-0 my-5 max-container">
+        <h2 class="my-5 text-center text-md-start">Productos de la semana!</h1>
+        <div id="products-week" class="dn-grid">
+
+            <div class="weekProduct-card shadow-lg">
+              <div class="weekProduct-header mt-3 mx-auto">
+                <div class="header-text">
+                  <h4>Mascarilla Facial</h4>
+                  <p>Dulce Nectar</p>
+                </div>
+              </div>
+              <div class="weekProduct-body">
+                <img
+                src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
+                alt="Mascarilla Facial"
+              />
+              </div>
+              <div class="weekProduct-footer mx-4 text-center">
                 <p>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content asdfasdfasdf asdfasdf
-                  asdfasdfasd asdfasdfsadf.
+                  Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
                 </p>
+                <button class="btn-primary">
+                  Ir a la tienda
+                </button>
               </div>
             </div>
-          </div>
-          -->
+            <div class="weekProduct-card shadow-lg">
+              <div class="weekProduct-header mt-3 mx-auto">
+                <div class="header-text">
+                  <h4>Mascarilla Facial</h4>
+                  <p>Dulce Nectar</p>
+                </div>
+              </div>
+              <div class="weekProduct-body">
+                <img
+                src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
+                alt="Mascarilla Facial"
+              />
+              </div>
+              <div class="weekProduct-footer mx-4 text-center">
+                <p>
+                  Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
+                </p>
+                <button class="btn-primary">
+                  Ir a la tienda
+                </button>
+              </div>
+            </div>
+            <div class="weekProduct-card shadow-lg">
+              <div class="weekProduct-header mt-3 mx-auto">
+                <div class="header-text">
+                  <h4>Mascarilla Facial</h4>
+                  <p>Dulce Nectar</p>
+                </div>
+              </div>
+              <div class="weekProduct-body">
+                <img
+                src="https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp"
+                alt="Mascarilla Facial"
+              />
+              </div>
+              <div class="weekProduct-footer mx-4 text-center">
+                <p>
+                  Mascarilla facial para hidratar el rostro, hecha a base de miel y amigable con todo tipo de piel.
+                </p>
+                <button class="btn-primary">
+                  Ir a la tienda
+                </button>
+              </div>
+            </div>
+
         </div>
       </div>
 
       <div class="my-5">
         <hr>
       </div>
-      <!-- Sección de noticias y artículos -->
+
+      
+
+      <!----------------------------------------------------------------------
+       NEWS SECTION
+       ---------------------------------------------------------------------->
       <div class="container-fluid my-5">
-        <h1 class="text-center text-md-start">
+        <h2 class="text-center text-md-start ">
           Noticias y artículos sobre el mundo de la miel!
-        </h1>
+        </h2>
         <div class="dn-news-container">
-          <!-- News card template -->
-          <!--
-					<div class="card m-4 position-relative dn-news-card">
-            <p class="mt-3 dn-p-date p-1">${this.date}</p>
-            <img class="w-100 card-img-top" src="${this.imgURL}" alt="" />
-            <div class="card-body d-flex flex-column">
-              <h3 class="card-title">${this.title}</h3>
-              <p class="card-text my-3">${this.abstract}</p>
-              <a
-                href="${this.url}"
-                class="d-block btn btn-secondary mx-5 mt-auto"
-                >leer mas</a
-              >
+          <div class="newsCard-container">
+            <div class="card-background ">
+              <div class="news-img ">
+              </div>
+              <div class="newsCard-desc">
+                <h5>Título de la noticia</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut ullam itaque fugiat reiciendis quibusdam.</p>
+                <button class="btn-secondary ">Leer articulo</button>
+              </div>
             </div>
           </div>
-					-->
+        </div>
+        <div class="dn-news-container">
+          <div class="newsCard-container">
+            <div class="card-background ">
+              <div class="news-img ">
+              </div>
+              <div class="newsCard-desc">
+                <h5>Título de la noticia</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut ullam itaque fugiat reiciendis quibusdam.</p>
+                <button class="btn-secondary ">Leer articulo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dn-news-container">
+          <div class="newsCard-container">
+            <div class="card-background ">
+              <div class="news-img ">
+              </div>
+              <div class="newsCard-desc">
+                <h5>Título de la noticia</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in nihil fugiat. Facilis, adipisci ut ullam itaque fugiat reiciendis quibusdam.</p>
+                <button class="btn-secondary ">Leer articulo</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
