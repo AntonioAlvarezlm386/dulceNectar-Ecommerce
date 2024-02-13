@@ -77,7 +77,8 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 1rem;
 	gap: 2rem;
-	width: 100%;
+	width: 90%;
+  margin: auto;
 }
 
 /* ---------------------------------------------------------------------
@@ -87,8 +88,8 @@
  .weekProduct-card{
   background-color: var(--primary);
   border: 2px solid #acacac;
-  height: 37em;
-  width: clamp(22em, 30%, 25em);
+  height: 30em;
+  width: clamp(20em, 10vw, 24em);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,22 +114,22 @@
 }
 
 .weekProduct-body{
-  height: 23em;
-  width: 22em;
+  height: 15em;
+  width: 18em;
   background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1707761510/DulceNectar/honeycomb_gxhw3w.webp);
   background-position: center;
-  background-size:20em ;
+  background-size:13em ;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .weekProduct-body img{
-  height: 18em;
+  height: 12em;
 }
 
 .weekProduct-footer{
-  padding: 1em;
+  padding: 1em 0;
   border-top: 2px solid var(--divider);
 }
 
@@ -156,7 +157,7 @@
  .card-background{
   background-color: var(--divider);
   display: flex;
-  height: 12em;
+  height: 15em;
   margin: 2em 0;
   position: relative;
  }
@@ -164,17 +165,19 @@
  .news-img{
   background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1705761251/cld-sample-4.jpg);
   background-size: cover;
-  width: 12em;
-  height: 16em;
+  width: 14em;
+  height: 19em;
   position: absolute;
   top: -2em;
   left: 4em;
  }
 
  .newsCard-desc{
-  padding: 1.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 60%;
-  margin-left: 18em;
+  margin: 0 2em 0 22em;
  }
 
 /*
