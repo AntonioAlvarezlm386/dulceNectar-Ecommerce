@@ -1,11 +1,23 @@
 /*  definicion de Posisoin para que no se vaya con el scroll  */
 nav{
-  top: 0%;
+  top: 0;
   position: sticky !important;
-  background-color: var(--dark-primary);
   z-index: 1000;
-  font-weight: 400;
+  font-weight: 450;
   font-size: 0.9em;
+  color: var(--accent);
+  backdrop-filter: blur(8px);
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: var(--dark-primary);
+  opacity: 0.75;
+  z-index: -1; 
 }
 
 .nav-img {
@@ -14,16 +26,17 @@ nav{
 }
 
 .philosopher span{
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
-.cuenta {
-  width: 30px !important;
-  padding: 0;
+.nav-link{
+  border-radius: 5px;
 }
 
 .nav-link:hover {
-  color: var(--gray) !important;
+  color: var(--background) !important;
+  background-color: var(--accent);
+  border-radius: 5px;;
 }
 
 .selector {

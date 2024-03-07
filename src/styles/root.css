@@ -1,7 +1,7 @@
 /*---------------------------------------------
 FORMAT STYLES
 ---------------------------------------------*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,13 +19,18 @@ FORMAT STYLES
   --divider: #F1D18A;
   --dark: #303030;
   --gray: #6a6a6a;
-  }
+}
 
 /*-----------------------------------------
 FONTS
 -----------------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -46,38 +51,39 @@ p {
   color: var(--gray);
 }
 
-.text-white{color: var(--background);}
-.text-dark{color: var(--dark);}
-.text-gray{color: var(--gray);}
+.text-white {
+  color: var(--background);
+}
 
-.philosopher{
+.text-dark {
+  color: var(--dark);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.philosopher {
   font-family: 'Philosopher', sans-serif !important;
   color: #683F35;
 }
 
-/*-----------------------------------------
-FONTS
------------------------------------------*/
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Philosopher', sans-serif;
+/*---------------------------------------------
+SECTION'S TITLE
+-----------------------------------------------*/
+.section-title {
+  background: rgb(255, 217, 90);
+  background: radial-gradient(circle, rgba(255, 217, 90, 0.35) 0%, rgba(148, 187, 233, 0) 100%);
+  border-top: 3px solid var(--divider);
+  border-bottom: 3px solid var(--divider);
+  padding: 8px 2em 8px 2em;
+  width: fit-content;
+  margin: auto;
 }
 
-p {
-  font-family: 'Quicksand', sans-serif !important;
-  font-size: 1em;
-}
-
-.title {
-  font-family: 'Quicksand', sans-serif !important;
-  font-size: 2em !important;
-  color: var(--dark);
-}
-
-.subtitle {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.5em !important;
-  color: var(--gray);
+.container{
+  max-width: 1440px;
+  width: 100%;
 }
 
 /*----------------------------------------------
@@ -147,7 +153,7 @@ p {
 /*-----------------------------------------
 BACKGROUND
 -----------------------------------------*/
-body, .carousel {
+body {
   background-color: var(--primary-background) !important;
 }
 
@@ -168,57 +174,56 @@ body, .carousel {
 }
 
 /*---------------------------------------------------------
-BACKGROUND  DECORATION
+BACKGROUND STYLES
 ---------------------------------------------------------*/
-
 .fancy_background {
   z-index: -1;
+  position: fixed;
   top: 0;
-  position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .fancy_background_item {
-  position: absolute;
-  object-fit: contain;
   -webkit-filter: drop-shadow(5px 5px 5px var(--black));
   filter: drop-shadow(5px 5px 5px var(--black));
-  opacity: 0.6;
+  position: absolute;
 }
 
-.fancy_background img:nth-child(1){
+.fancy_background img:nth-child(1) {
+  opacity: 0.4;
   width: 10rem;
-  height: 10rem;
-  top: 30rem;
-  left: 2rem;
-  transform: rotate(90deg);
+  top: 10vh;
+  left: 10%;
 }
 
-.fancy_background img:nth-child(2){
-  width: 10rem;
-  height: 10rem;
-  top: 50rem;
-  right: 1%;
-  transform: rotate(-45deg);
-  /*animation-name: move2;*/
+.fancy_background img:nth-child(2) {
+  opacity: 0.4;
+  width: 20rem;
+  top: 0;
+  right: -10%;
 }
 
-.fancy_background img:nth-child(3){
-  left: -20%;
-  width: 120vw;
-  top: 100vh;
-  opacity: 0.3;
+.fancy_background img:nth-child(3) {
+  opacity: 0.4;
+  height: 8em;
+  right: 15%;
+  top: 80vh;
+  transform: scaleX(-1);
 }
 
-.fancy_background img:nth-child(4){
-  right: -20%;
-  width: 120vw;
-  top: 200vh;
+.fancy_background img:nth-child(4) {
+  width: clamp(18em, 30%, 40em);
+  top: 65vh;
+  left: 30%;
   opacity: 0.3;
   transform: rotate(90deg);
 }
+
+/*--------------------------------------
+FORM STYLES
+----------------------------------------*/
 
 .form-control:focus {
   border-color: var(--yellow3-base);
@@ -227,107 +232,29 @@ BACKGROUND  DECORATION
 
 .form-check-input:focus,
 .form-check-input:checked,
-.form-check-input::before 
-{
+.form-check-input::before {
   border-color: var(--yellow3-light);
   background-color: var(--yellow3-base);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--yellow3-light);
 }
 
-.form-select:focus{
+.form-select:focus {
   border-color: var(--yellow3-base);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px var(--yellow3-light);
 }
 
 select option:hover {
   background-color: var(--yellow1-light);
-  color:white;
+  color: white;
 }
-select option:checked{
+
+select option:checked {
   background-color: var(--yellow2-light);
-  }
+}
 
 .dropdown-toggle:focus,
-.dropdown-toggle:active
-{
+.dropdown-toggle:active {
   background-color: var(--yellow3-base);
   border: var(--yellow2-base);
 
-}
-
-/*----------------------------------------------------
-MEDIA QUERIES FOR COMMON SIZES
-----------------------------------------------------*/
-@media only screen and (max-width: 600px) {
-  .fancy_background img:nth-child(3){
-    left: -20%;
-    width: 110vw;
-    top: 100vh;
-    opacity: 0.3;
-  }
-
-  .fancy_background img:nth-child(4){
-    right: -20%;
-    width: 110vw;
-    top: 200vh;
-    opacity: 0.3;
-    transform: rotate(90deg);
-  }
-  
-}
-
-@media only screen and (min-width: 600px) {
-  .fancy_background img:nth-child(3){
-    left: -20%;
-    width: 100vw;
-    top: 100vh;
-  }
-
-  .fancy_background img:nth-child(4){
-    right: -20%;
-    width: 100vw;
-    top: 200vh;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .fancy_background img:nth-child(3){
-    left: -20%;
-    width: 90vw;
-    top: 100vh;
-  }
-
-  .fancy_background img:nth-child(4){
-    right: -20%;
-    width: 90vw;
-    top: 200vh;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .fancy_background img:nth-child(3){
-    left: -10%;
-    width: 50vw;
-    top: 100vh;
-  }
-
-  .fancy_background img:nth-child(4){
-    right: -10%;
-    width: 50vw;
-    top: 200vh;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .fancy_background img:nth-child(3){
-    left: -10%;
-    width: 40vw;
-    top: 100vh;
-  }
-
-  .fancy_background img:nth-child(4){
-    right: -10%;
-    width: 40vw;
-    top: 200vh;
-  }
 }

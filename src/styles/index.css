@@ -3,69 +3,32 @@
 @import './components/navbar.css';
 @import './components/footer.css';
 
-/* Bootstrap redefinition */
+/*----------------------------------------------------------
+  HERO STYLES
+  ---------------------------------------------------------*/
 
-/* All text inside carousel */
-.carousel-item {
-	text-shadow: 0px 0px 10px var(--font-color-dark);
-	background-color: (--secondary);
+.hero{
+  width: 100%;
+  height: 55vh;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 25%, rgba(148,187,233,0) 100%), url(https://res.cloudinary.com/dkrsandox/image/upload/v1709834244/DulceNectar/Miel-de-abeja_f9r9rl.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* Fix height of carousel items */
-.dn-carousel-inner-item {
-	position: relative;
-	height: 30rem;
-	overflow: hidden;
+.hero-container{
+  display: flex;
+  justify-content: start;
+  align-items: end;
 }
 
-/* Estilos de la imagen de background del carousel */
-.dn-carousel-inner-item img {
-	position: absolute;
-	z-index: 1;
-	height: 100%;
-	object-fit: cover;
-	filter: opacity(80%);
-}
-
-/* Estilos del texto dentro del carousel */
-.dn-carousel-inner-item .dn-carousel-text {
-	position: absolute;
-	z-index: 2;
-}
-
-/* Estilos para poner el text en la parte izquierda superior del carousel*/
-.dn-carousel-inner-item .dn-carousel-text-c1 {
-	top: 7%;
-	left: 7%;
-	color: var(--font-color-light);
-	text-align: left;
-}
-
-/* Estilos para poner el text en la parte derecha inferior del carousel*/
-.dn-carousel-inner-item .dn-carousel-text-c3 {
-	bottom: 10%;
-	right: 7%;
-	color: var(--font-color-light);
-	text-align: right;
-}
-
-/*Logo central del carousel*/
-.dn-carousel-inner-item .dn-carousel-logo {
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 3;
-	transform: translate(-50%, -50%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/* Aplica un filtro al logo central del carousel */
-.dn-carousel-logo img {
-	filter: drop-shadow(1px 6px 17px white);
+.text-container{
+  padding: 0.4em 5px;
+  margin-bottom: 2em;
+  color: var(--background);
+  line-height: 140%;
+  width: clamp(18em, 15vw, 65%);
+  border-bottom: 4px solid var(--divider);
 }
 
 /* Contenedor de los productos de la semana */
@@ -79,6 +42,7 @@
 	gap: 2rem;
 	width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 
 /* ---------------------------------------------------------------------
@@ -152,6 +116,7 @@
   width: 70%;
   margin: 0 auto;
   padding: 1em 0;
+  overflow: hidden;
 }
 
  .card-background{
@@ -179,57 +144,3 @@
   width: 60%;
   margin: 0 2em 0 22em;
  }
-
-/*
-----------------------------------------------------
-MEDIA QUERIES FOR COMMON SIZES
-----------------------------------------------------
-*/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /*El grid contenedor solo tiene una columna*/
-	.dn-grid {
-		grid-template-columns: repeat(1, 1fr);
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  /*El grid contenedor solo tiene una columna*/
-	.dn-grid {
-		grid-template-columns: repeat(1, 1fr);
-	}
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /*El grid contenedor tiene dos columnas*/
-	.dn-grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  /*El grid contenedor solo tiene 3 columnas*/
-	.dn-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  /*El grid contenedor solo tiene 3 columnas*/
-	.dn-grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-/*
-----------------------------------------------------
-NEWS SECTION STYLES
-----------------------------------------------------
-*/
-
