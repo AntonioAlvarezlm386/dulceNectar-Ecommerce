@@ -3,7 +3,7 @@ nav{
   top: 0;
   position: sticky !important;
   z-index: 1000;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 0.9em;
   color: var(--accent);
   backdrop-filter: blur(8px);
@@ -40,5 +40,8 @@ nav::before {
 }
 
 .selector {
-  color: var(--primary) !important;
+  border-radius: 0;
+  border-bottom: 3px solid var(--accent);
+  font-weight: 600;
+  color: var(--dark) !important;
 }

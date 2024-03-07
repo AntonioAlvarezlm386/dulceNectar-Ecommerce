@@ -4,10 +4,10 @@
 @import './components/footer.css';
 
 /*----------------------------------------------------------
-  HERO STYLES
+  HERO
   ---------------------------------------------------------*/
 
-.hero{
+.index-hero{
   width: 100%;
   height: 55vh;
   background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 25%, rgba(148,187,233,0) 100%), url(https://res.cloudinary.com/dkrsandox/image/upload/v1709834244/DulceNectar/Miel-de-abeja_f9r9rl.jpg);
@@ -23,26 +23,25 @@
 }
 
 .text-container{
-  padding: 0.4em 5px;
-  margin-bottom: 2em;
+  padding: 0.4em;
+  margin: 0 0 2em 1em;
   color: var(--background);
   line-height: 140%;
   width: clamp(18em, 15vw, 65%);
   border-bottom: 4px solid var(--divider);
 }
 
-/* Contenedor de los productos de la semana */
+/* ----------------------------------------------------------------
+  WEEK PRODUCTSs
+  ---------------------------------------------------------------- */
 .dn-grid {
 	display: grid;
-	justify-content: center;
 	justify-items: center;
-	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 1rem;
-	gap: 2rem;
+  grid-auto-rows: auto;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	gap: 1rem;
 	width: 90%;
   margin: auto;
-  overflow: hidden;
 }
 
 /* ---------------------------------------------------------------------
@@ -94,7 +93,7 @@
 
 .weekProduct-footer{
   padding: 1em 0;
-  border-top: 2px solid var(--divider);
+  border-top: 2.5px solid var(--divider);
 }
 
 
@@ -113,28 +112,35 @@
   ---------------------------------------------------- */
 
 .newsCard-container{
-  width: 70%;
-  margin: 0 auto;
-  padding: 1em 0;
-  overflow: hidden;
+  width: clamp(18em, 80vw, 70%);
+  margin: 2em auto;
 }
 
  .card-background{
   background-color: var(--divider);
+  width: fit-content;
+  min-width: 18em;
+  margin: 1em auto;
   display: flex;
-  height: 15em;
-  margin: 2em 0;
-  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 1px solid var(--accent);
  }
 
  .news-img{
+  position: relative;
   background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1705761251/cld-sample-4.jpg);
   background-size: cover;
-  width: 14em;
-  height: 19em;
-  position: absolute;
-  top: -2em;
-  left: 4em;
+  width: 12em;
+  height: 16em;
+  top: -1em;
+  border-radius: 3px;
+ }
+
+ .item{
+  flex: 1 1 auto;
+  margin: 0 2em;
  }
 
  .newsCard-desc{
@@ -142,5 +148,5 @@
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  margin: 0 2em 0 22em;
+  margin: 1em;
  }

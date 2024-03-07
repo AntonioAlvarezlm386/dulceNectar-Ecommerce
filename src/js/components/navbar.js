@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
   const loc = document.location;
 });
 
-// Cuando se hace click en logout debe borrar el usuario de localStorage
+// To logout the user
 NAVBAR_DOM.dropdown.logout.addEventListener('click', () => {
   localStorage.removeItem(LOGGED_USER_LS_KEY);
   NAVBAR_DOM.dropdown.login.classList.remove('d-none');
