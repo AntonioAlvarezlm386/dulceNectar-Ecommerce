@@ -33,7 +33,7 @@ nav::before {
   border-radius: 5px;
 }
 
-.nav-link:hover {
+.subtitle:hover {
   color: var(--background) !important;
   background-color: var(--accent);
   border-radius: 5px;;

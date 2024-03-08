@@ -2,6 +2,13 @@
 @import './root.css';
 @import './components/navbar.css';
 @import './components/footer.css';
+@import './components/hero.css';
+
+
+
+.hero-img{
+  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1707848735/DulceNectar/about_2_i8rbqq.webp);
+}
 
 /*contenedor del formulario y de la lista de reseñas*/
 .dn-reviews-cont {

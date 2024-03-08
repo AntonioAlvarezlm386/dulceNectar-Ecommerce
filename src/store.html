@@ -2,35 +2,34 @@
 <html lang="en">
 
 <head>
-  <!-- Meta -->
+  <!-- META -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google fonts imports -->
+  <!-- GOOGLE FONTS IMPORTS -->
   <link
     href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600&display=swap"
     rel="stylesheet">
 
-  <!-- Bootstrap 5 styles -->
+  <!-- BOOTSTRAP 5 STYLES -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-  <!-- Bootstrap 5 Icons -->
+  <!-- BOOTSTRAP 5 ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
-  <!-- Sweet Alert 2 -->
+  <!-- SWEET ALERT -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <!-- Local imports -->
+  <!-- LOCAL IMPORTS -->
   <link rel="stylesheet" href="./styles/store.css" />
   <link rel="shortcut icon" href="./assets/svgs/DulceNectarSinLetras.svg" />
   <title>Tienda</title>
 </head>
 
 <body>
- 
+  <!-- NAVBAR -->
   <header>
-    <!--NAVBAR-->
     <nav class="navbar navbar-expand-md position-fixed w-100 top-0 shadow-sm">
       <div class="container-fluid">
         <!-- INDEX & LOGO -->
@@ -41,7 +40,7 @@
           </a>
         </div>
 
-        <!--HANBURGUER MENU-->
+        <!--HAMBURGER MENU-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -195,26 +194,18 @@
   </div>
 
   <main class="container pt-5 position-relative mb-5">
-    <div class="bannerContainer">
-      <img
-        class="banner-logo"
-        src="./assets/svgs/DulceNectarSinLetras.svg"
-        alt="Logo"
-      />
-      <h1>¡Bienvenido a nuestra tienda!</h1>
 
-      <img
-        class="banner-honeyComb1"
-        src="./assets/imgs/honeycomb.png"
-        alt="honey"
-      />
-      <img
-        class="banner-honeyComb2"
-        src="./assets/imgs/honeycomb.png"
-        alt="honey"
-      />
+    <div class="hero">
+      <div class="hero-background"></div>
+      <div class="hero-img"></div>
+      <div class="hero-text">
+        <h2>Bienvenido a nuestra tienda!</h2>
+        <p>Conoce la variedad de productos que tenemos para ti</p>
+        <img src="https://res.cloudinary.com/dkrsandox/image/upload/v1707761510/DulceNectar/honeycomb_gxhw3w.webp"
+          alt="">
+      </div>
     </div>
-    <!-- <h1 class="mb-4">Bienvenido a la tienda</h1> -->
+
     <div id="id-shop-container" class="dn-shop-container container">
       <!-- Template de la tarjeta de compra -->
       <!-- <div>
@@ -257,47 +248,33 @@
     </div>
   </main>
 
-  <!-- Inicia footer -->
+  <!-- FOOTER -->
   <footer>
-    <div class="container_footer">
-      <div class="social_footer">
-        <a href="https://facebook.com" target="_blank" rel="noopener"><img src="./assets/imgs/facebook.png"
-            alt="face" /></a>
-        <a href="https://instagram.com" target="_blank" rel="noopener"><img src="./assets/imgs/instagram.png"
-            alt="insta" /></a>
-        <a href="https://twitter.com" target="_blank" rel="noopener"><img src="./assets/imgs/x.png" alt="x" /></a>
+    <img class="logo-footer"
+      src="https://res.cloudinary.com/dkrsandox/image/upload/v1707855962/DulceNectar/logo-white_gzglb2.png" alt="logo">
+    <div class="footer-links w-100">
+      <div class="nav_fo">
+        <a href="index.html">
+          <h3>Inicio</h3>
+        </a>
       </div>
-      <div class="navigation_footer">
-        <div class="nav_fo">
-          <a href="index.html">
-            <h3>Inicio</h3>
-          </a>
-        </div>
-        <div class="nav_fo">
-          <a href="store.html">
-            <h3>Tienda</h3>
-          </a>
-        </div>
-        <div class="nav_fo">
-          <a href="review.html">
-            <h3>Reseña</h3>
-          </a>
-        </div>
-        <div class="nav_fo">
-          <a href="about-us.html">
-            <h3>Nosotros</h3>
-          </a>
-        </div>
-        <div class="nav_fo">
-          <a href="contact.html">
-            <h3>Contacto</h3>
-          </a>
-        </div>
+      <div class="nav_fo">
+        <a href="store.html">
+          <h3>Tienda</h3>
+        </a>
       </div>
-      <div class="copyright_footer">
-        <h5>Dulce Nectar 2023 | Todos los derechos reservados.</h5>
+      <div class="nav_fo">
+        <a href="review.html">
+          <h3>Reseña</h3>
+        </a>
+      </div>
+      <div class="nav_fo">
+        <a href="about-us.html">
+          <h3>Nosotros</h3>
+        </a>
       </div>
     </div>
+    <p class="px-2 text-center">&copy; Dulce Nectar 2024 | Todos los derechos reservados.</p>
   </footer>
 
   <script src="./js/store.js" type="module" defer></script>

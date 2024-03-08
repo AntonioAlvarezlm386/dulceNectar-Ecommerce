@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentLocation = window.location.pathname;
 
   // Obtener todos los elementos de la barra de navegación
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navLinks = document.querySelectorAll('.subtitle');
 
   // Iterar sobre los enlaces y agregar la clase activa al enlace correspondiente
   navLinks.forEach((link) => {

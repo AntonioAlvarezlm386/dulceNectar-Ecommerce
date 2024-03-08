@@ -192,14 +192,14 @@ BACKGROUND STYLES
 }
 
 .fancy_background img:nth-child(1) {
-  opacity: 0.4;
+  opacity: 0.3;
   width: 10rem;
   top: 10vh;
   left: 10%;
 }
 
 .fancy_background img:nth-child(2) {
-  opacity: 0.4;
+  opacity: 0.3;
   height: 8em;
   right: 15%;
   top: 80vh;
@@ -210,7 +210,7 @@ BACKGROUND STYLES
   width: clamp(18em, 30%, 40em);
   top: 65vh;
   left: 30%;
-  opacity: 0.3;
+  opacity: 0.2;
   transform: rotate(90deg);
 
 }

@@ -1,9 +1,6 @@
 import { WeekProductCard } from './lib/minirender/weekProductCard.js';
 import { NewCard } from './lib/minirender/newsCard.js';
 import './components/navbar.js';
-import newImg1 from '../assets/imgs/news1.webp';
-import newImg2 from '../assets/imgs/news2.webp';
-import newImg3 from '../assets/imgs/news3.webp';
 import { getWeekProducts } from './api/products.js';
 
 

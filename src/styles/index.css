@@ -9,7 +9,7 @@
 
 .index-hero{
   width: 100%;
-  height: 55vh;
+  height: 65vh;
   background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 25%, rgba(148,187,233,0) 100%), url(https://res.cloudinary.com/dkrsandox/image/upload/v1709834244/DulceNectar/Miel-de-abeja_f9r9rl.jpg);
   background-position: top center;
   background-size: cover;
@@ -23,6 +23,7 @@
 }
 
 .text-container{
+  font-size: clamp(1.5rem, 0.5rem + 2.1905vw, 3rem);
   padding: 0.4em;
   margin: 0 0 2em 1em;
   color: var(--background);
@@ -112,41 +113,39 @@
   ---------------------------------------------------- */
 
 .newsCard-container{
-  width: clamp(18em, 80vw, 70%);
+  width: clamp(18em, 70vw, 70%);
   margin: 2em auto;
 }
 
  .card-background{
   background-color: var(--divider);
-  width: fit-content;
   min-width: 18em;
   margin: 1em auto;
+  border-radius: 5px;
+  border: 1px solid var(--accent);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  border-radius: 5px;
-  border: 1px solid var(--accent);
  }
 
  .news-img{
   position: relative;
-  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1705761251/cld-sample-4.jpg);
+  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1707848735/DulceNectar/about_2_i8rbqq.webp);
   background-size: cover;
-  width: 12em;
-  height: 16em;
+  width: 10em;
+  height: 18em;
   top: -1em;
   border-radius: 3px;
  }
 
  .item{
   flex: 1 1 auto;
-  margin: 0 2em;
+  margin: 0 2em 1em 2em;
  }
 
  .newsCard-desc{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  margin: 1em;
+  width: 40%;
  }

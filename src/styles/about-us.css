@@ -1,51 +1,10 @@
 @import './root.css';
 @import './components/navbar.css';
 @import './components/footer.css';
-
-/*----------------------------------------------------
-  HERO STYLES
-------------------------------------------------------*/
-
-.hero{
-  height: 45em;
-  position: relative;
-}
-
-.hero-background{
-  background-color: var(--primary);
-  position: absolute;
-  height: 100%;
-  width: 60%;
-  right: 0;
-}
+@import './components/hero.css';
 
 .hero-img{
   background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1707843852/DulceNectar/honey1_ayltil.webp);
-  position: absolute;
-  height: 80%;
-  width: 70%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.hero-text{
-  background-color: var(--accent);
-  height: 15em;
-  width: 60%;
-  padding: 3.5em 3em;
-  text-align: center;
-  position: relative;
-  right: 2em;
-  overflow: hidden;
-  color: var(--divider);
-  left: 35%;
-  top: 40%;
-}
-.hero-text img{
-  position: absolute;
-  width: 150px;
-  right: -5%;
-  bottom: -30%;
 }
 
 /*------------------------------------------------------------------
@@ -71,49 +30,4 @@
 .vision-cont{
   width: 100vw;
   border: solid 1px red;
-}
-
-/*----------------------------------------------
-Sección de tarjetas de equipo de desarrollo
--------------------------------------------------*/
-
-/*Contenedor de las tarjetas*/
-.about-card-cont{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 3em;
-}
-
-.dn-about-card{
-  width: 18em;
-  height: 25em;
-}
-
-.about-header-card{
-  position: relative;
-  background-color: var(--brown1-light);
-  height: 35%;
-}
-
-.about-header-card img{
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 11em;
-  border-radius: 50%;
-  border: var(--brown1-light) solid 3px;
-}
-
-/*contenedor de los links de git y ln*/
-.about-footer-card{
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 2.5em;
-}
-
-/*Iconos de linkedin y github*/
-.about-footer-card img{
-  width: 2em;
 }
