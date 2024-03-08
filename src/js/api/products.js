@@ -4,10 +4,10 @@
  */
 
 import { ProductDbDto } from './dtos/product.js';
-import lipBalmImg from '../../assets/imgs/lip_balm.webp';
-import maskImg from '../../assets/imgs/mascarilla.webp';
-import propolioImg from '../../assets/imgs/propolio.webp';
-import honeyImg from '../../assets/imgs/honey1.webp';
+import lipBalmImg from 'https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp';
+import maskImg from 'https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp';
+import propolioImg from 'https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp';
+import honeyImg from 'https://res.cloudinary.com/dkrsandox/image/upload/v1707760652/DulceNectar/Producto1_fvcwpj.webp';
 import { NewProductDto } from './dtos/newProduct.js';
 import { BE_URL } from '../utils/constants.js';
 import { LOGGED_USER_LS_KEY } from '../utils/constants.js';

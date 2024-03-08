@@ -21,7 +21,7 @@ export class NewCard {
     return `
         <div class="card m-4 position-relative  dn-news-card">
             <p class="mt-3 dn-p-date p-1">${this.date}</p>
-            <img class="w-100 card-img-top" src="${this.imgURL}" alt="">
+            <img class="w-100 card-img-top" src="https://res.cloudinary.com/dkrsandox/image/upload/v1707848735/DulceNectar/about_2_i8rbqq.webp" alt="">
             <div class="card-body d-flex flex-column">
                 <h3 class="card-title">${this.title}</h3>
                 <p class="card-text my-3">${this.abstract}</p>

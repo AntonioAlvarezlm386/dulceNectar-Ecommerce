@@ -5,13 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google fonts imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google fonts imports -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Quicksand:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
     <!-- Bootstrap 5 styles -->
     <link
@@ -35,92 +32,52 @@
     <link rel="shortcut icon" href="./assets/svgs/DulceNectarSinLetras.svg" />
     <title>Dulce Nectar</title>
   </head>
+
   <body>
-    <!-- Inicio de navbar -->
-    <nav
-      class="navbar navbar-expand-md nav-color position-fixed w-100 top-0 shadow"
-    >
+   <header>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md position-fixed w-100 top-0 shadow-sm">
       <div class="container-fluid">
-        <!-- Inicio y logo -->
+        <!-- INDEX & LOGO -->
         <div class="navbar-nav">
-          <a class="navbar-brand nav-link title" href="index.html">
-            <img
-              src="./assets/svgs/DulceNectar.svg"
-              alt="Logo Dulce Nectar"
-              class="nav-img"
-            />DULCE NECTAR
+          <a class="navbar-brand nav-link philosopher" href="index.html">
+            <img src="./assets/svgs/DulceNectar.svg" alt="Logo" class="nav-img" /><span class="text-dark">DULCE
+              NECTAR</span>
           </a>
-          <!-- menu Hamburger -->
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+
+        <!--HANBURGUER MENU-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- lista de links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"></li>
+
+        <!-- LINKS -->
+        <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active subtitle"
-                aria-current="page"
-                href="about-us.html"
-                id="about"
-                >Nosotros</a
-              >
+              <a class="nav-link active subtitle mx-3" href="store.html" id="shop">Tienda</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active subtitle"
-                href="contact.html"
-                id="contacto"
-                >Contacto</a
-              >
+              <a class="nav-link active subtitle mx-3" href="review.html" id="review">Reseñas</a>
             </li>
-            <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
             <li class="nav-item">
-              <a class="nav-link active subtitle" href="store.html" id="shop"
-                >Tienda</a
-              >
-            </li>
-            <!-- Conexión ya pre hecha favor de llamar el archivo como dice el href -->
-            <li class="nav-item">
-              <a class="nav-link active subtitle" href="review.html" id="review"
-                >Reseña</a
-              >
+              <a class="nav-link active subtitle mx-3" aria-current="page" href="about-us.html" id="about">Nosotros</a>
             </li>
           </ul>
 
-          <div class="btn-group">
-            <button
-              type="button"
-              class="btn btn-primary dropdown-toggle"
-              data-bs-toggle="dropdown"
-              data-bs-display="static"
-              aria-expanded="false"
-            >
+          <!--ACCOUNT-->
+          <div class="btn-group account-btn px-3">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
               <i class="bi bi-person-circle"></i>
             </button>
-            <ul
-              id="id-navbar-account-dropdown-list"
-              class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"
-            >
+            <ul id="id-navbar-account-dropdown-list" class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
               <li>
-                <a class="dropdown-item" type="button" href="account.html"
-                  >Mi cuenta</a
-                >
+                <a class="dropdown-item" type="button" href="account.html">Mi cuenta</a>
               </li>
               <li>
-                <a class="dropdown-item" type="button" href="cart.html">
-                  Mi carrito
-                </a>
+                <a class="dropdown-item" type="button" href="cart.html">Mi carrito</a>
               </li>
               <hr class="dropdown-divider" />
               <li id="id-navbar-account-dropdown-login">
@@ -136,6 +93,7 @@
         </div>
       </div>
     </nav>
+  </header>
 
 
     <!-- Modal de terminar compra -->
