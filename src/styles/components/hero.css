@@ -3,8 +3,12 @@
 ------------------------------------------------------*/
 
 .hero{
-  height: 45em;
+  height: 70vh;
+  max-height: 50rem;
   position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;  
 }
 
 .hero-background{
@@ -18,37 +22,39 @@
 .hero-img{
   position: absolute;
   height: 80%;
-  width: 70%;
+  width: clamp(18em,80vw, 65em);
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
 }
 
 .hero-text{
   background-color: var(--accent);
-  height: 15em;
-  width: 60%;
-  padding: 3.5em 3em;
-  text-align: center;
-  position: relative;
-  right: 2em;
-  overflow: hidden;
   color: var(--divider);
-  left: 35%;
-  top: 40%;
+  position: relative;
+  right: clamp(0.1rem, -1.1321rem + 6.5714vw, 7rem);
+  top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 15em;
+  width: clamp(18rem, 12.2857rem + 30.4762vw, 50rem);
+  overflow: hidden;
 }
 
 .hero-text h2{
-  font-size: 2.5rem;
+  font-size: clamp(1.3rem, 1.05rem + 1.3333vw, 2.7rem);
 }
 
 .hero-text p {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 0.9464rem + 0.2857vw, 1.3rem);
   color: var(--background);
 }
 
 .hero-text img{
   position: absolute;
-  width: 150px;
-  right: -5%;
-  bottom: -30%;
+  width:clamp(8.125rem, 7.9018rem + 1.1905vw, 9.375rem);
+  right: -12%;
+  bottom: -25%;
 }

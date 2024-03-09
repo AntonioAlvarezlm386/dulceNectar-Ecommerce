@@ -1,6 +1,5 @@
-import { getProducts } from './api/products.js';
-import { ProductShopCard } from './lib/minirender/productShopCard.js';
 
+import { ProductShopCard } from './lib/minirender/productShopCard.js';
 import './components/navbar.js';
 
 /**
@@ -118,9 +117,9 @@ STORE_DOM.fabCart.addEventListener('click', () => {
 /**
  * Event listener cuando el DOM es cargado en
  * el navegador
- */
 window.addEventListener('DOMContentLoaded', () => {
-  /* Obtén los productos de la API y hacer render en el DOM */
+  */
+  /* Obtén los productos de la API y hacer render en el DOM 
   getProducts().then((products) => {
     console.log("🚀 ~ file: store.js:125 ~ getProducts ~ products:", products)
     
@@ -131,3 +130,5 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+*/

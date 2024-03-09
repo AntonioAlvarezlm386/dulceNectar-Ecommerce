@@ -22,6 +22,7 @@ NAVBAR_DOM.dropdown.logout.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const currentLocation = window.location.pathname;
+  console.log(currentLocation)
 
   // Obtener todos los elementos de la barra de navegación
   const navLinks = document.querySelectorAll('.subtitle');
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Iterar sobre los enlaces y agregar la clase activa al enlace correspondiente
   navLinks.forEach((link) => {
     const linkPath = link.getAttribute('href');
-
+    console.log(linkPath)
     PAGES.forEach((page) => {
       if (currentLocation.includes(page) && linkPath.includes(page)) {
         link.classList.add('selector');

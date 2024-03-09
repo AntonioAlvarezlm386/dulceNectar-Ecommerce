@@ -3,7 +3,6 @@ export const URL_REGEX = /^(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)
 
 export const PAGES = [
 	"index",
-	"contact",
 	"store",
 	"review",
 	"about-us",
