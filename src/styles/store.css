@@ -4,7 +4,8 @@
 @import './components/hero.css';
 
 .hero-img{
-  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1708016856/DulceNectar/banner2_gmuxrg.webp);
+  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/a_hflip/v1708016856/DulceNectar/banner2_gmuxrg.webp);
+  background-size: cover;
 }
 
 

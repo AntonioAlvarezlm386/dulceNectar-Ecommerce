@@ -86,8 +86,9 @@
     </nav>
   </header>
 
-  <main class="container position-relative py-5">
-    <div class="hero">
+  <main class="pt-5 hidden">
+    <!-- HERO -->
+    <div class="hero container">
       <div class="hero-background"></div>
       <div class="hero-img"></div>
       <div class="hero-text">
@@ -98,34 +99,100 @@
       </div>
     </div>
 
-
-    <div class="about-section">
-      <p class="">
+    <div class="w-full text-center container about-container">
+      <!-- MAIN ABOUT DESCRIPTION-->
+      <p class="section-title main-desc">
         Dulce Néctar es una plataforma de comercio electrónico, especializada
         en la venta y la distribución de productos naturales basados en miel.
       </p>
+
       <div class="mision-cont">
-        <h4 class="">Misión</h4>
-        <p class="">
-          Nuestra misión es proporcionar a nuestros clientes, acceso conveniente y
-          confiable, a una amplia gama de productos naturales y orgánicos
-          derivados de la miel de alta calidad, brindando productos que nutren
-          tanto el cuerpo como al planeta.
-        </p>
+        <div class="desc-cont pt-3">
+          <h3 class="">Misión</h3>
+          <p class="px-3">
+            Nuestra misión es proporcionar a nuestros clientes, acceso conveniente y
+            confiable, a una amplia gama de productos naturales y orgánicos
+            derivados de la miel de alta calidad, brindando productos que nutren
+            tanto el cuerpo como al planeta.
+          </p>
+        </div>
+        <img class="about-img"
+          src="https://res.cloudinary.com/dkrsandox/image/upload/v1707848735/DulceNectar/about_2_i8rbqq.webp"
+          alt="mision">
       </div>
 
-      <div class="vision-cont">
-        <h4 class="cont">Visión</h4>
-        <p class="cont">
-          Queremos convertirnos en el principal destino en línea, para aquellos
-          que buscan productos naturales, orgánicos y sostenibles. Aspiramos a ser
-          reconocidos por nuestra excelencia en la calidad de los productos, el
-          servicio al cliente y nuestro compromiso con la salud y el medio
-          ambiente.
-        </p>
+      <div class="vision-cont position-relative">
+        <img class="about-img"
+          src="https://res.cloudinary.com/dkrsandox/image/upload/v1707848739/DulceNectar/about_1_h0bd9m.webp"
+          alt="vision-img">
+        <div class="desc-cont pt-3">
+          <div class="background-vision position-absolute">
+          </div>
+          <h3 class="">Visión</h3>
+          <p class="cont">
+            Queremos convertirnos en el principal destino en línea, para aquellos
+            que buscan productos naturales, orgánicos y sostenibles. Aspiramos a ser
+            reconocidos por nuestra excelencia en la calidad de los productos, el
+            servicio al cliente y nuestro compromiso con la salud y el medio
+            ambiente.
+          </p>
+        </div>
       </div>
 
     </div>
+    <!--CONTACT SECTION-->
+    <section class="contact container mt-5">
+      <h3 class="section-title">Contacto</h3>
+      <div class="contact-cont my-5">
+        <div class="contact-desc my-2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iure obcaecati. Explicabo earum in
+            doloremque beatae quae sequi assumenda voluptate!</p>
+          <img class="my-3" src="./assets/svgs/contact.svg" alt="contact" width="100px">
+        </div>
+
+        <div class="contact-form">
+          <form action="" method="post">
+            <div class="mb-3">
+              <div class="form-floating is-invalid">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Password">
+                <label for="floatingInput">Nombre Completo</label>
+              </div>
+              <div class="invalid-feedback mb-3">
+                Este campo no puede estar vació.
+              </div>
+              <div class="form-floating is-invalid">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Número de Teléfono</label>
+              </div>
+              <div class="invalid-feedback mb-3 ">
+                Ingrese un número de teléfono válido.
+              </div>
+              <div class="form-floating is-invalid">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo electrónico</label>
+              </div>
+              <div class="invalid-feedback mb-3">
+                Ingresa un correo electrónico válido.
+              </div>
+              <div class="form-floating is-invalid">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Mensaje</label>
+              </div>
+              <div class="invalid-feedback mb-3">
+                Déjanos un mensaje.
+              </div>
+              <div class="text-center">
+                <button class="btn-primary">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->

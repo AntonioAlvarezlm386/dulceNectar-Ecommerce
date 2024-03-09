@@ -4,30 +4,88 @@
 @import './components/hero.css';
 
 .hero-img{
-  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/v1707843852/DulceNectar/honey1_ayltil.webp);
+  background-image: url(https://res.cloudinary.com/dkrsandox/image/upload/a_hflip/v1707843852/DulceNectar/honey1_ayltil.webp);
+  background-position: center left;
+  background-size: cover;
 }
 
 /*------------------------------------------------------------------
   BODY SECTION STYLES
   ------------------------------------------------------------------*/
-
-.about-section{
-  height: fit-content;
-  width: 100%;
-  padding: 2em;
-  text-align: center;
+main{
+  overflow: hidden;
 }
 
-.about-section > p{
-  border-top: 2px solid var(--divider);
-  border-bottom: 2px solid var(--divider);
-  margin: 2em 0;
-  padding: 1em 3em;
+.main-desc{
+  margin: 2.5em 1em 0 1em;
+  padding: 1em;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: clamp(1rem, 0.9107rem + 0.4762vw, 1.5rem);
+}
+
+.mision-cont{
+  width: 100vw;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: clamp(3rem, 2.4643rem + 2.8571vw, 6rem);
+  background-color: var(--divider);
 }
 
 .vision-cont{
-  width: 100vw;
-  border: solid 1px red;
+  width: 100%;
+  display:flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  margin-top: 5em;
 }
+
+.background-vision{
+  background-color: var(--divider);
+  top:0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.desc-cont{
+  width: clamp(16rem, 12.6071rem + 18.0952vw, 35rem);
+  margin:0 2rem 0 2rem;
+}
+
+.about-img{
+  width: clamp(16rem, 14.3929rem + 8.5714vw, 25rem);
+  position: relative;
+  top: -2em;
+  margin: 0 2rem;
+}
+
+/*--------------------
+  CONTACT SECTION
+  -------------------*/
+  .contact-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(18rem, 15.8571rem + 11.4286vw, 30rem);
+    text-align: center;
+  }
+
+  .contact-form{
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 1em;
+    width: clamp(20rem, 15.8571rem + 11.4286vw, 30rem);
+  }
